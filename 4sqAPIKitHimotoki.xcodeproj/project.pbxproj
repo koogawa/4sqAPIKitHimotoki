@@ -12,6 +12,9 @@
 		212674DA1CFA84BD0046EA1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212674D81CFA84BD0046EA1C /* Main.storyboard */; };
 		212674DC1CFA84BD0046EA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212674DB1CFA84BD0046EA1C /* Assets.xcassets */; };
 		212674DF1CFA84BD0046EA1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212674DD1CFA84BD0046EA1C /* LaunchScreen.storyboard */; };
+		212674E71CFA891F0046EA1C /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212674E61CFA891F0046EA1C /* APIKit.framework */; };
+		212674E91CFA89350046EA1C /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212674E81CFA89350046EA1C /* Himotoki.framework */; };
+		212674EB1CFA89480046EA1C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212674EA1CFA89480046EA1C /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		212674DB1CFA84BD0046EA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212674DE1CFA84BD0046EA1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212674E01CFA84BD0046EA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212674E61CFA891F0046EA1C /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		212674E81CFA89350046EA1C /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		212674EA1CFA89480046EA1C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212674EB1CFA89480046EA1C /* Result.framework in Frameworks */,
+				212674E91CFA89350046EA1C /* Himotoki.framework in Frameworks */,
+				212674E71CFA891F0046EA1C /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,9 @@
 		212674C81CFA84BD0046EA1C = {
 			isa = PBXGroup;
 			children = (
+				212674EA1CFA89480046EA1C /* Result.framework */,
+				212674E81CFA89350046EA1C /* Himotoki.framework */,
+				212674E61CFA891F0046EA1C /* APIKit.framework */,
 				212674D31CFA84BD0046EA1C /* 4sqAPIKitHimotoki */,
 				212674D21CFA84BD0046EA1C /* Products */,
 			);
@@ -249,6 +261,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 4sqAPIKitHimotoki/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koogawa.-sqAPIKitHimotoki";
@@ -260,6 +276,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = 4sqAPIKitHimotoki/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.koogawa.-sqAPIKitHimotoki";
