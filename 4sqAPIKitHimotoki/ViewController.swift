@@ -28,7 +28,7 @@ class ViewController: UITableViewController {
             switch response {
 
             case .Success(let responses):
-                self.venues = responses.response.venues
+                self.venues = responses.venues
 
             case .Failure(let error):
                 print(error)

@@ -15,7 +15,6 @@
 		212674FD1CFA8CB80046EA1C /* Resp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212674FC1CFA8CB80046EA1C /* Resp.swift */; };
 		212674FF1CFA8DA80046EA1C /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212674FE1CFA8DA80046EA1C /* Venue.swift */; };
 		212675011CFA8F090046EA1C /* FoursquareRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212675001CFA8F090046EA1C /* FoursquareRequestType.swift */; };
-		212675031CFA91B20046EA1C /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212675021CFA91B20046EA1C /* Responses.swift */; };
 		2126750B1CFA95FF0046EA1C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212674EA1CFA89480046EA1C /* Result.framework */; };
 		2126750C1CFA95FF0046EA1C /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 212674EA1CFA89480046EA1C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2126750E1CFA96040046EA1C /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212674E81CFA89350046EA1C /* Himotoki.framework */; };
@@ -54,7 +53,6 @@
 		212674FC1CFA8CB80046EA1C /* Resp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resp.swift; sourceTree = "<group>"; };
 		212674FE1CFA8DA80046EA1C /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		212675001CFA8F090046EA1C /* FoursquareRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareRequestType.swift; sourceTree = "<group>"; };
-		212675021CFA91B20046EA1C /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 		212674EC1CFA8C620046EA1C /* model */ = {
 			isa = PBXGroup;
 			children = (
-				212675021CFA91B20046EA1C /* Responses.swift */,
 				212674FC1CFA8CB80046EA1C /* Resp.swift */,
 				212674FE1CFA8DA80046EA1C /* Venue.swift */,
 			);
@@ -187,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212675031CFA91B20046EA1C /* Responses.swift in Sources */,
 				212675011CFA8F090046EA1C /* FoursquareRequestType.swift in Sources */,
 				212674D71CFA84BD0046EA1C /* ViewController.swift in Sources */,
 				212674FF1CFA8DA80046EA1C /* Venue.swift in Sources */,
