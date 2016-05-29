@@ -32,7 +32,7 @@ extension FoursquareRequestType {
 }
 
 struct GetVenueList : FoursquareRequestType {
-    typealias Response = Responses
+    typealias Response = Resp
 
     var method: HTTPMethod {
         return .GET
@@ -51,6 +51,6 @@ struct GetVenueList : FoursquareRequestType {
     }
 
     func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) throws -> Response {
-        return try decodeValue(object)
+        return try decodeValue(object, rootKeyPath: "response")
     }
 }
